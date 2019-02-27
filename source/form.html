@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink-form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--closed page-header--nojs">
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__elements">
+            <a class="logo" href="index.html" aria-label="Логотип">
+              <svg class="logo__item logo__item--mobile" width="74.426" height="22.859">
+                <use xlink:href="#sprite-logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="logo__item logo__item--tab" width="146.3" height="40.375">
+                <use xlink:href="#sprite-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo__item logo__item--desktop" width="146.3" height="40.375">
+                <use xlink:href="#sprite-logo-pink-white-desktop"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="top">
+        <h1 class="top__title top__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+      <div class="caption caption--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="caption__appeal">Пожалуйста, заполните форму ниже:</span></div>
+      <section class="data">
+        <h2 class="visually-hidden">Форма конкурса</h2>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__full-name">
+            <label class="input input--full-name">
+              <span class="input__label">Фамилия:</span>
+              <input class="input__control" type="text" name="surname" required placeholder="Укажите фамилию *">
+            </label>
+            <label class="input input--full-name">
+              <span class="input__label">Имя:</span>
+              <input class="input__control input__control--full-name" type="text" name="firstname" required placeholder="Введите ваше имя *">
+            </label>
+            <label class="input input--full-name">
+              <span class="input__label">Отчество:</span>
+              <input class="input__control" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
+          <div class="form__checkbox">
+            <div class="fieldset fieldset--checkbox">
+              <p class="fieldset__legend fieldset__legend--checkbox">Ваши безбашенные достижения в путешествии</p>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="sharp" checked="">
+                <span class="checkbox__label">Сделал селфи с акулой</span>
+              </label>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="beach" checked="">
+                <span class="checkbox__label">Обгорел на пляже</span>
+              </label>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="chuck">
+                <span class="checkbox__label">Видел Чака Норриса</span>
+              </label>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="souvenirs">
+                <span class="checkbox__label">Накупил сувениров</span>
+              </label>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="tower" checked="">
+                <span class="checkbox__label">Удержал башню</span>
+              </label>
+              <label class="checkbox">
+                <input class="visually-hidden checkbox__control checkbox__control--checkbox" type="checkbox" name="hotel">
+                <span class="checkbox__label">Разгромил отель</span>
+              </label>
+            </div>
+          </div>
+          <div class="form__contacts">
+            <div class="fieldset fieldset--contacts">
+              <p class="fieldset__legend fieldset__legend--contacts">Контактная информация</p>
+              <label class="input input--contacts">
+                <span class="input__label input__label--contacts">Номер телефона</span>
+                <input class="input__control input__control--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="input input--contacts">
+                <span class="input__label input__label--contacts">Адрес почты</span>
+                <input class="input__control input__control--contacts" type="email" name="email" required placeholder="Введите почту *">
+              </label>
+            </div>
+          </div>
+          <div class="form__radio">
+            <div class="fieldset fieldset--radio">
+              <p class="fieldset__legend fieldset__legend--radio">С каким приложением путешествовали?</p>
+              <label class="radio">
+                <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="ios" checked="">
+                <span class="radio__label">Pink для iOS</span>
+              </label>
+              <label class="radio">
+                <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="android">
+                <span class="radio__label">Pink на Android</span>
+              </label>
+              <label class="radio">
+                <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="windows">
+                <span class="radio__label">Windows Phone</span>
+              </label>
+            </div>
+          </div>
+          <div class="form__textarea">
+            <div class="fieldset fieldset--textarea">
+              <p class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</p>
+              <label class="textarea">
+                <textarea class="textarea__control" name="textarea-emotions" rows="20" cols="20">Можно прям в красках, не стесняясь в выражениях</textarea>
+              </label>
+            </div>
+          </div>
+          <div class="form__footer">
+            <button class="form__button button button--green button-sent" type="submit">Отправить форму</button>
+            <p class="form__text"><span class="form__star">*</span>&mdash; обязательные <span class="form__text-insert">для заполнения</span> поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer container">
+      <a class="footer__logo" href="index.html" aria-label="Ссылка на главную страницу">
+        <svg class="footer__intro footer__intro--mobile" width="146.3" height="40.375">
+          <use xlink:href="#sprite-logo-pink-blue-mobile"></use></svg>
+        <svg class="footer__intro footer__intro--desktop" width="146.3" height="40.375">
+          <use xlink:href="#sprite-logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg class="copyright__link-icon" width="30" height="35"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
+        </a>
+      </div>
+    </footer>
+    <div class="pop-up pop-up--not-done">
+      <div class="pop-up__top">
+        <p class="pop-up__message">Что-то пошло не&nbsp;так!</p>
+        <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="pop-up__button-wrapper">
+        <button class="pop-up__button button button--green button--ok" type="button">Ок</button>
+      </div>
+    </div>
+    <div class="pop-up pop-up--done">
+      <div class="pop-up__top pop-up__top--done">
+        <p class="pop-up__message">Ваша заявка отправлена</p>
+        <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      </div>
+      <div class="pop-up__button-wrapper pop-up__button-wrapper--done">
+        <button class="pop-up__button button button--green button--close" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    <script src="js/js.js"></script>
+  </body>
+</html>

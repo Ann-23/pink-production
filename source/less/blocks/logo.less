@@ -1,0 +1,57 @@
+.logo {
+  display: block;
+  width: 75px;
+}
+
+.logo__item {
+  fill: @white;
+
+  &:hover {
+    fill: @sec-color;
+  }
+
+  &:active {
+    fill: @white-30;
+  }
+}
+
+.logo__item--tab {
+  display: none;
+}
+
+.logo__item--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 150px;
+    padding-bottom: 12px;
+  }
+
+  .logo__item--mobile {
+    display: none;
+  }
+
+  .logo__item--tab {
+    display: inline-block;
+  }
+
+  .logo__item--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__item--mobile {
+    display: none;
+  }
+
+  .logo__item--tab {
+    display: none;
+  }
+
+  .logo__item--desktop {
+    display: inline-block;
+  }
+}

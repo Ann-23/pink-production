@@ -1,0 +1,26 @@
+.buttons {
+  margin-top: auto;
+}
+
+.buttons__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .buttons {
+    padding-top: 39px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .buttons {
+    padding-top: 118px;
+  }
+
+  .buttons__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

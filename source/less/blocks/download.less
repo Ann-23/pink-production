@@ -1,0 +1,71 @@
+.download__title {
+  display: none;
+  margin: 0;
+}
+
+.download__remark {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24px;
+  text-align: center;
+  color: @white;
+}
+
+.download__list {
+  margin: 0;
+  padding: 19px;
+  padding-top: 34px;
+  padding-bottom: 9px;
+}
+
+@media (min-width: @tablet-width) {
+  .download__title {
+    display: block;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .download__remark {
+    font-size: 18px;
+  }
+
+  .download__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 64px;
+    padding-bottom: 16px;
+  }
+
+  .download__list {
+    padding: 30px;
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__title {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__wrapper {
+    padding-top: 192px;
+    padding-bottom: 30px;
+  }
+}

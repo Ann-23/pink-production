@@ -1,0 +1,188 @@
+.fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+.fieldset__legend {
+  margin: 0;
+  padding-bottom: 41px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @sec-color;
+}
+
+.fieldset__legend--checkbox {
+  position: absolute;
+  top: -78px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fieldset__legend--contacts {
+  display: none;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: @white;
+}
+
+.fieldset__legend--textarea {
+  position: absolute;
+  top: -24px;
+  left: 12%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fieldset__legend--radio {
+  position: absolute;
+  top: -76px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset {
+    padding-bottom: 48px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid @light-grey;
+  }
+
+  .fieldset--contacts {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
+  .fieldset--radio {
+    padding-top: 56px;
+    padding-bottom: 14px;
+  }
+
+  .fieldset--checkbox {
+    padding-top: 54px;
+    padding-bottom: 0;
+  }
+
+  .fieldset__legend {
+    padding-bottom: 0;
+  }
+
+  .fieldset__legend--contacts {
+    position: absolute;
+    top: -10px;
+    left: 30%;
+    display: inherit;
+    padding-left: 24px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--radio {
+    position: absolute;
+    top: -10px;
+    left: 21%;
+    padding-left: 21px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--checkbox {
+    position: absolute;
+    top: -10px;
+    left: 16%;
+    padding-left: 25px;
+    padding-right: 30px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--textarea {
+    position: absolute;
+    top: -10px;
+    left: 29%;
+    padding-left: 37px;
+    padding-right: 38px;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset--radio {
+    max-width: 431px;
+    padding-top: 57px;
+    padding-bottom: 12px;
+  }
+
+  .fieldset--checkbox {
+    flex-wrap: wrap;
+    align-content: space-around;
+    max-height: 173px;
+    height: 173px;
+    width: 940px;
+  }
+
+  .fieldset--contacts {
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    padding-top: 43px;
+    padding-bottom: 14px;
+  }
+
+  .fieldset__legend--radio {
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    display: inherit;
+    padding-left: 27px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--contacts {
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    display: inherit;
+    padding-left: 31px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset__legend--checkbox {
+    position: absolute;
+    top: -10px;
+    left: 26%;
+    display: inherit;
+    padding-left: 39px;
+    padding-right: 35px;
+    background-color: @white;
+  }
+
+  .fieldset--textarea {
+    width: 940px;
+    padding-bottom: 41px;
+  }
+
+  .fieldset__legend--textarea {
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    padding-left: 38px;
+    padding-right: 40px;
+    background-color: @white;
+  }
+}

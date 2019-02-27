@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink-main</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--closed page-header--nojs">
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__elements">
+            <a class="logo" aria-label="Логотип">
+              <svg class="logo__item logo__item--mobile" width="74.426" height="22.859">
+                <use xlink:href="#sprite-logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="logo__item logo__item--tab" width="146.3" height="40.375">
+                <use xlink:href="#sprite-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo__item logo__item--desktop" width="146.3" height="40.375">
+                <use xlink:href="#sprite-logo-pink-white-desktop"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Pink сделает вашу жизнь ярче</h1>
+      <section class="app-download">
+        <div class="download container">
+          <div class="download__wrapper">
+            <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+            <a class="download__button button" href="https://www.apple.com/ru/itunes/working-itunes/market/" target="_blank">Скачать приложение</a>
+            <ul class="download__list application">
+              <li class="application__item">
+                <a class="application__link application__link--itunes" href="https://www.apple.com/ru/itunes/working-itunes/market/" target="_blank" aria-label="itunes-store">
+                  <span class="visually-hidden">Приложение itunes-store</span>
+                </a>
+              </li>
+              <li class="application__item">
+                <a class="application__link application__link--android" href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" target="_blank" aria-label="android-store">
+                  <span class="visually-hidden">Приложение android-store</span>
+                </a>
+              </li>
+              <li class="application__item">
+                <a class="application__link application__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank" aria-label="windows-store">
+                  <span class="visually-hidden">Приложение windows-store</span>
+                </a>
+              </li>
+            </ul>
+            <p class="download__remark">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      <section class="motivation">
+        <div class="motivation__wrapper">
+          <div class="motivation__titles container">
+            <h3 class="motivation__text">Устали от серости мегаполиса?</h3>
+            <h3 class="motivation__text motivation__text--second-header">Нам есть, что вам предложить!</h3>
+          </div>
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <div class="motivation__list">
+            <div class="motivation__list-wrapper container">
+              <ul class="list">
+                <li class="list__item">
+                  <p class="list__title">Поднимает настроение</p>
+                  <p class="list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="list__item">
+                  <p class="list__title">Меняет мир вокруг</p>
+                  <p class="list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+                </li>
+                <li class="list__item">
+                  <p class="list__title">Заводит новых друзей</p>
+                  <p class="list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="motivation__footer">
+            <div class="motivation__footer-wrapper container">
+              <span class="motivation__number">24</span>
+              <h3 class="motivation__text motivation__text--footer">Эффект на&nbsp;24 часа!</h3>
+              <p class="motivation__description">Британские ученые провели исследования
+              и доказали, что&nbsp;положительный эффект oт&nbsp;использования приложения длится
+              целые сутки!
+              </p>
+              <a class="motivation__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__wrapper container">
+          <div class="reviews__list review">
+            <blockquote class="review__item">
+              <p class="review__title">Николай Петров</p>
+              <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="review__remark">25 лет, водитель трамвая</p>
+            </blockquote>
+            <button class="reviews__row reviews__row--left" type="button">
+              <span class="visually-hidden">Кнопка пролистывания влево</span>
+              <span class="reviews__icon">
+                <svg class="reviews__row-left" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
+              </span>
+            </button>
+            <button class="reviews__row reviews__row--right" type="button">
+              <span class="visually-hidden">Кнопка пролистывания вправо</span>
+              <span class="reviews__icon">
+                <svg class="reviews__row-right" width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-right"></use></svg>
+              </span>
+            </button>
+          </div>
+          <div class="reviews__list review">
+            <blockquote class="review__item">
+              <p class="review__title">Николай Петров</p>
+              <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="review__remark">25 лет, водитель трамвая</p>
+            </blockquote>
+          </div>
+          <div class="reviews__list review">
+            <blockquote class="review__item">
+              <p class="review__title">Николай Петров</p>
+              <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="review__remark">25 лет, водитель трамвая</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles controls">
+            <button class="controls__toggle controls__toggle--active" type="button"><span class="visually-hidden">Слайдер 1</span></button>
+            <button class="controls__toggle" type="button"><span class="visually-hidden">Слайдер 2</span></button>
+            <button class="controls__toggle" type="button"><span class="visually-hidden">Слайдер 3</span></button>
+          </p>
+        </div>
+      </section>
+      <section class="rate">
+        <div class="rate__wrapper">
+          <div class="rate__table-container container">
+            <table class="rate__table">
+              <tr>
+                <th class="rate__header rate__header--empty">
+                </th>
+                <th class="rate__header">
+                  <p class="rate__title">База</p>
+                  <p class="rate__price">1,99 usd</p>
+                </th>
+                <th class="rate__header rate__header--icon">
+                  <span class="rate__tape-text">Хит</span>
+                  <p class="rate__title">Стандарт</p>
+                  <p class="rate__price">3,99 usd</p>
+                </th>
+                <th class="rate__header">
+                  <p class="rate__title">Анлим</p>
+                  <p class="rate__price">9,99 usd</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="rate__item">
+                  Розовый фильтр
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden">Розовый фильтр</span>
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__item">Смайлики</td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-no" width="27" height="26"><use xlink:href="#sprite-icon-no"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden">Смайлики</span>
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__item">Комментарии</td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-no" width="27" height="26"><use xlink:href="#sprite-icon-no"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-text rate__cell-text--hidden">Комментарии</span>
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-no" width="27" height="26"><use xlink:href="#sprite-icon-no"></use></svg>
+                  </span>
+                </td>
+                <td class="rate__item">
+                  <span class="rate__cell-icon">
+                    <svg class="rate__icon-yes" width="31" height="21"><use xlink:href="#sprite-icon-yes"></use></svg>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="rate__toggles controls">
+          <button class="controls__toggle" type="button"><span class="visually-hidden">Слайдер 1</span></button>
+          <button class="controls__toggle controls__toggle--active" type="button"><span class="visually-hidden">Слайдер 2</span></button>
+          <button class="controls__toggle" type="button"><span class="visually-hidden">Слайдер 3</span></button>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper container">
+          <p class="contacts__text contacts__text--title">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__intro">
+            <div class="contacts__cell contacts__cell--link">
+              <p class="contacts__title">Звоните:</p>
+              <a class="contacts__text contacts__text--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__cell contacts__cell--mail">
+              <p class="contacts__title contacts__title--mail">Пишите:</p>
+              <a class="contacts__text contacts__text--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__cell contacts__cell--address">
+              <p class="contacts__title">Приезжайте в гости:</p>
+              <a class="contacts__text contacts__text--link" href="#">ул. Большая Конюшенная, 19/8</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map map">
+          <iframe class="map__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.3747122464097!2d30.32114839402648!3d59.9373298698134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1539796140533"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--index container">
+      <a class="footer__logo" aria-label="Логотип">
+        <svg class="footer__intro footer__intro--mobile" width="146.3" height="40.375">
+          <use xlink:href="#sprite-logo-pink-blue-mobile"></use></svg>
+        <svg class="footer__intro footer__intro--desktop" width="146.3" height="40.375">
+          <use xlink:href="#sprite-logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg class="copyright__link-icon" width="30" height="35"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.application {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.application__item {
+  width: 45px;
+  min-height: 42px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24px;
+  color: @white;
+}
+
+.application__item:last-child {
+  margin-right: 0;
+}
+
+.application__link {
+  display: block;
+}
+
+.application__link--itunes {
+  min-height: 57px;
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.application__link--android {
+  min-height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+}
+
+.application__link--windows {
+  min-height: 42px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @desktop-width) {
+  .application {
+    padding-top: 69px;
+    padding-bottom: 44px;
+  }
+}

@@ -1,0 +1,42 @@
+.page-header {
+  width: 100%;
+  background-color: @black-30;
+}
+
+.page-header--closed {
+  width: 100%;
+  background-color: @black-30;
+}
+
+.page-header--opened {
+  background-color: @main-color;
+}
+
+.page-header--nojs {
+  position: static;
+  background-color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    display: block;
+    width: 150px;
+    height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .page-header__wrapper {
+    background-color: @black-30;
+  }
+
+  .page-header--closed {
+    background-color: transparent;
+  }
+}

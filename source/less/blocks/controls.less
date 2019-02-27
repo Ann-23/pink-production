@@ -1,0 +1,50 @@
+.controls__toggle {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: @blue-dark-30;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: @blue-dark-60;
+  }
+
+  &:active::before {
+    background-color: @blue-dark-10;
+  }
+}
+
+.controls__toggle--active {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 3px solid @black;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: transparent;
+  }
+}

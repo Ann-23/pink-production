@@ -1,0 +1,84 @@
+.radio {
+  position: relative;
+  display: block;
+  padding-bottom: 45px;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.radio__label {
+  position: relative;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @main-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid @grey-strong;
+    border-radius: 50%;
+    background-color: @white;
+  }
+
+  &:hover::before {
+    border: 2px solid @main-color;
+  }
+
+  &:active::before {
+    border: 2px solid @sec-color;
+  }
+}
+
+.radio__control:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: @sec-color;
+}
+
+.radio__control:focus + .radio__label::before {
+  outline: 1px solid @sec-color;
+  outline-offset: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio {
+    padding-bottom: 45px;
+    padding-left: 119px;
+  }
+
+  .radio__label {
+    &::before {
+      top: -8px;
+      left: -61px;
+    }
+  }
+
+  .radio__control:checked + .radio__label::after {
+    top: 4px;
+    left: -49px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio {
+    padding-bottom: 44px;
+    padding-left: 132px;
+  }
+
+  .radio__label {
+    &::before {
+      left: -61px;
+    }
+  }
+}

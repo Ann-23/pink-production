@@ -1,0 +1,61 @@
+.map {
+  position: relative;
+  z-index: -2;
+  min-height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-size: 100%;
+  background-color: @grey-medium;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 100%;
+  }
+}
+
+.map__item {
+  display: block;
+  z-index: 2;
+  width: 100%;
+  min-height: 200px;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    min-height: 373px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -333px;
+    background-size: 103%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 100%;
+    }
+  }
+
+  .map__item {
+    min-height: 373px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    min-height: 485px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -291px;
+    background-size: 124%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 100%;
+    }
+  }
+
+  .map__item {
+    min-height: 486px;
+  }
+}

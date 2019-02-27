@@ -1,0 +1,217 @@
+.tool {
+  display: flex;
+}
+
+.tool__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 212px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.tool__item {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 556px;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-medium;
+  }
+}
+
+.tool__item--cut {
+  width: 44px;
+  height: 44px;
+}
+
+.tool__item--fill {
+  width: 48px;
+  height: 43px;
+  margin-right: 4px;
+}
+
+.tool__item--light {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.tool__icon {
+  position: relative;
+  fill: @blue-dark-30;
+
+  &:hover,
+  &:focus {
+    fill: @blue-dark-50;
+  }
+
+  &:active {
+    fill: @sec-color;
+  }
+}
+
+.tool__icon--cut {
+  fill: @sec-color;
+
+  &:hover,
+  &:focus {
+    fill: @blue-dark-50;
+  }
+
+  &:active {
+    fill: @sec-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tool {
+    margin-top: -9px;
+  }
+
+  .tool__item--cut {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tool__icon--cut {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tool__item--fill {
+    width: 24px;
+    height: 22px;
+    margin-right: 0;
+  }
+
+  .tool__icon--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .tool__item--light {
+    width: 17px;
+    height: 16px;
+    margin-right: -3px;
+  }
+
+  .tool__icon--light {
+    width: 17px;
+    height: 16px;
+  }
+
+  .tool__list {
+    flex-direction: column;
+    width: 29px;
+    margin: 0;
+  }
+
+  .tool__icon--cut,
+  .tool__icon--fill,
+  .tool__icon--light {
+    fill: @sec-color;
+  }
+
+  .tool__item {
+    margin-top: 16px;
+
+    &::after {
+      top: 55px;
+      left: 0;
+      width: 276px;
+    }
+  }
+
+  .tool__item:nth-child(2) {
+    margin-top: 54px;
+
+    &::after {
+      top: 128px;
+      left: 0;
+    }
+  }
+
+  .tool__item:nth-child(3) {
+    margin-top: 50px;
+
+    &::after {
+      top: 198px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tool {
+    margin-top: 13px;
+  }
+
+  .tool__item--cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tool__icon--cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tool__item--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .tool__icon--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .tool__item--light {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tool__icon--light {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tool__list {
+    width: 48px;
+  }
+
+  .tool__item {
+    margin-top: 0;
+
+    &::after {
+      top: 75px;
+      left: 0;
+      width: 410px;
+    }
+  }
+
+  .tool__item:nth-child(2) {
+    margin-top: 34px;
+
+    &::after {
+      top: 148px;
+      left: 0;
+    }
+  }
+
+  .tool__item:nth-child(3) {
+    margin-top: 35px;
+
+    &::after {
+      top: 218px;
+      left: 0;
+    }
+  }
+}

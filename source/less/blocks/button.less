@@ -1,0 +1,130 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: @sec-color;
+    background-color: @white;
+  }
+
+  &:active {
+    color: @pink-30;
+    background-color: @white;
+  }
+}
+
+.button--green {
+  padding: 22px;
+  text-transform: uppercase;
+  background-color: @green;
+  border: none;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @green-dark;
+  }
+
+  &:active {
+    color: @white-30;
+    background-color: @green-dark;
+  }
+}
+
+.button--post {
+  margin-bottom: 12px;
+  color: @sec-color;
+  border-color: @sec-color;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @sec-color;
+  }
+
+  &:active {
+    color: @white-30;
+  }
+}
+
+.button--cancel {
+  min-height: 56px;
+  color: @blue-dark-10;
+  border-color: @blue-dark-10;
+
+  &:hover,
+  &:focus {
+    color: @blue-dark-30;
+    background-color: transparent;
+    border-color: @blue-dark-30;
+  }
+
+  &:active {
+    color: @white-30;
+    border: none;
+    background-color: @blue-dark-30;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 300px;
+  }
+
+  .button--post {
+    width: 260px;
+    margin-bottom: 23px;
+  }
+
+  .button--green {
+    margin: 0;
+  }
+
+  .button--cancel {
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    font-size: 21px;
+  }
+
+  .button--post {
+    width: 185px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .button--cancel {
+    width: 185px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .button--green {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .button--close {
+    width: 458px;
+  }
+}

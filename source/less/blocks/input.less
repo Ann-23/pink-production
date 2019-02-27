@@ -1,0 +1,150 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__label {
+  margin-left: 22px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @sec-color;
+}
+
+.input__control {
+  box-sizing: border-box;
+  min-height: 60px;
+  margin-top: 6px;
+  margin-bottom: 19px;
+  padding: 17px 20px;
+  border: 2px solid @light-grey;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @main-color;
+  }
+
+  &:active {
+    border: 2px solid @sec-color;
+  }
+}
+
+.input__control:invalid {
+  border: 2px solid @sec-color;
+}
+
+.input__control--red {
+  border: 2px solid @sec-color;
+}
+
+.input__control::-webkit-input-placeholder {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+  .input--full-name {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .input__control {
+    position: relative;
+    flex-grow: 1;
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  .input__control--contacts {
+    width: 504px;
+    margin-bottom: 12px;
+    margin-left: 57px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 63px;
+  }
+
+  .input--contacts {
+    position: relative;
+    flex-direction: column-reverse;
+    margin-bottom: 29px;
+  }
+
+  .input__label {
+    margin-left: 0;
+    margin-right: 22px;
+  }
+
+  .input__label--contacts {
+    margin-left: 77px;
+    margin-right: 0;
+  }
+
+  .input--contacts::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 57px;
+    z-index: 1;
+    width: 60px;
+    height: 56px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: @light-grey;
+  }
+
+  .input--contacts:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 57px;
+    z-index: 1;
+    width: 60px;
+    height: 56px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: @light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input--contacts {
+    margin-bottom: 0;
+    margin-left: 59px;
+    margin-right: 13px;
+  }
+
+  .input--contacts::before {
+    top: 2px;
+    right: 2px;
+  }
+
+  .input--contacts:nth-child(3)::before {
+    top: 2px;
+    right: 2px;
+  }
+
+  .input__label--contacts {
+    margin-left: 17px;
+    margin-right: 0;
+  }
+
+  .input__control--contacts {
+    width: 374px;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 63px;
+  }
+}
